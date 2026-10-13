@@ -5,7 +5,7 @@ import './styles.css';
 
 const projects = [
   {
-    number: '01', type: 'UX CASE STUDY · STUDENT PROJECT', title: 'Campus Connect',
+    number: '01', type: 'UX CASE STUDY · STUDENT PROJECT', title: 'Campus Connect123',
     description: 'Reimagining how students discover campus events, clubs, and communities in one clear experience.',
     tags: ['User research', 'Information architecture', 'Prototype'], color: 'lavender', symbol: 'Cc'
   },
