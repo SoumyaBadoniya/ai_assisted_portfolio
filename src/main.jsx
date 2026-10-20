@@ -112,7 +112,7 @@ function App() {
                     <button className="project-title-button" onClick={() => setActiveProject(project)}>{project.title}<ArrowUpRight size={18}/></button>
                     <p>{project.description}</p>
                     <div className="tag-list">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
-                    <a href={project.url}></a>
+                    <a href={project.url}>Click Here</a>
                   </div>
                 </article>
               ))}
