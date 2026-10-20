@@ -7,17 +7,17 @@ const projects = [
   {
     number: '01', type: 'Design Thinking', title: 'Design Thinking',
     description: 'Problem: Fear of knife injuries made the user less confident in cooking independently.Process: Interviewed the user and researched existing vegetable choppers.Solution: Designed a safer vegetable chopper and created a cardboard prototype.Reflection: Learned the importance of user-centred design and identified the need for usability testing.',
-    tags: ['User research', 'Information architecture', 'Prototype'], color: 'lavender', symbol: 'DT'
+    tags: ['User research', 'Information architecture', 'Prototype'], color: 'lavender', symbol: 'DT',url:'https://github.com/SoumyaBadoniya/Product_Design_Design_Thinking-'
   },
   {
     number: '02', type: 'Design Management And IRP', title: 'Design Management',
     description: 'Problem: Create an affordable, healthier snack brand with a unique identity.Process: Conducted competitor research and developed brand identity, packaging, and marketing concepts.Solution: Designed a cucumber chips brand with three flavours, distinctive packaging, and an IPR protection strategy.Reflection: Learned brand management and intellectual property basics; would improve the design through customer feedback and testing.',
-    tags: ['User flow', 'Wireframes', 'UI design'], color: 'peach', symbol: 'DM'
+    tags: ['User flow', 'Wireframes', 'UI design'], color: 'peach', symbol: 'DM',url:'https://github.com/SoumyaBadoniya/Design_Management_And_IRP'
   },
   {
     number: '03', type: 'Photoshop Assignment', title: 'Photoshop Assignment',
     description: '1. Horizon Zero Dawn Poster: Created a cinematic composition poster combining character imagery, dramatic lighting, and landscape elements to create visual depth and atmosphere.2. God of War Poster: Designed a cinematic composition using character placement, snowy landscapes, and contrasting tones to create a dramatic visual impact.',
-    tags: ['Competitive review', 'Visual design', 'Usability'], color: 'mint', symbol: 'PA'
+    tags: ['Competitive review', 'Visual design', 'Usability'], color: 'mint', symbol: 'PA',url:'https://github.com/SoumyaBadoniya/PhotoshopAssignments'
   }
 ];
 
@@ -112,6 +112,7 @@ function App() {
                     <button className="project-title-button" onClick={() => setActiveProject(project)}>{project.title}<ArrowUpRight size={18}/></button>
                     <p>{project.description}</p>
                     <div className="tag-list">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
+                    <href url={project.url}></href>
                   </div>
                 </article>
               ))}
