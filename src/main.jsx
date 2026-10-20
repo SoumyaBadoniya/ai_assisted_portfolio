@@ -5,19 +5,19 @@ import './styles.css';
 
 const projects = [
   {
-    number: '01', type: 'UX CASE STUDY · STUDENT PROJECT', title: 'Campus Connect',
-    description: 'Reimagining how students discover campus events, clubs, and communities in one clear experience.',
-    tags: ['User research', 'Information architecture', 'Prototype'], color: 'lavender', symbol: 'Cc'
+    number: '01', type: 'Design Thinking', title: 'Design Thinking',
+    description: 'Problem: Fear of knife injuries made the user less confident in cooking independently.Process: Interviewed the user and researched existing vegetable choppers.Solution: Designed a safer vegetable chopper and created a cardboard prototype.Reflection: Learned the importance of user-centred design and identified the need for usability testing.',
+    tags: ['User research', 'Information architecture', 'Prototype'], color: 'lavender', symbol: 'DT'
   },
   {
-    number: '02', type: 'MOBILE APP CONCEPT', title: 'Mindful Moments',
-    description: 'A gentle daily check-in concept focused on calm interactions, readable content, and simple routines.',
-    tags: ['User flow', 'Wireframes', 'UI design'], color: 'peach', symbol: 'Mm'
+    number: '02', type: 'Design Management And IRP', title: 'Design Management',
+    description: 'Problem: Create an affordable, healthier snack brand with a unique identity.Process: Conducted competitor research and developed brand identity, packaging, and marketing concepts.Solution: Designed a cucumber chips brand with three flavours, distinctive packaging, and an IPR protection strategy.Reflection: Learned brand management and intellectual property basics; would improve the design through customer feedback and testing.',
+    tags: ['User flow', 'Wireframes', 'UI design'], color: 'peach', symbol: 'DM'
   },
   {
-    number: '03', type: 'WEB DESIGN EXPLORATION', title: 'Local Loop',
-    description: 'Helping people find small local businesses through a more personal and approachable discovery journey.',
-    tags: ['Competitive review', 'Visual design', 'Usability'], color: 'mint', symbol: 'Ll'
+    number: '03', type: 'Photoshop Assignment', title: 'Photoshop Assignment',
+    description: '1. Horizon Zero Dawn Poster: Created a cinematic composition poster combining character imagery, dramatic lighting, and landscape elements to create visual depth and atmosphere.2. God of War Poster: Designed a cinematic composition using character placement, snowy landscapes, and contrasting tones to create a dramatic visual impact.',
+    tags: ['Competitive review', 'Visual design', 'Usability'], color: 'mint', symbol: 'PA'
   }
 ];
 
