@@ -1,23 +1,23 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { ArrowDownRight, ArrowUpRight, Asterisk, Figma, Layers3, Lightbulb, Menu, MousePointer2, Sparkles, X } from 'lucide-react';
+import { ArrowDownRight, ArrowUpRight, Asterisk, Figma, Layers3, Lightbulb, Menu, MousePointer2, Sparkles, X, Package, Image as ImageIcon, ExternalLink, BrainCircuit } from 'lucide-react';
 import './styles.css';
 
 const projects = [
   {
     number: '01', type: 'Design Thinking', title: 'Design Thinking',
-    description: 'Problem: Fear of knife injuries made the user less confident in cooking independently.Process: Interviewed the user and researched existing vegetable choppers.Solution: Designed a safer vegetable chopper and created a cardboard prototype.Reflection: Learned the importance of user-centred design and identified the need for usability testing.',
-    tags: ['User research', 'Information architecture', 'Prototype'], color: 'lavender', symbol: 'DT',url:'https://github.com/SoumyaBadoniya/Product_Design_Design_Thinking-'
+    description: 'Problem: Fear of knife injuries made the user less confident when cooking independently. Process: Interviewed a user and reviewed existing vegetable choppers. Solution: Designed a safer vegetable chopper and created a cardboard prototype. Reflection: Learned the importance of user-centred design and identified the need for usability testing.',
+    tags: ['User research', 'Product design', 'Prototype'], color: 'lavender', icon: BrainCircuit, url:'https://github.com/SoumyaBadoniya/Product_Design_Design_Thinking-'
   },
   {
     number: '02', type: 'Design Management And IRP', title: 'Design Management',
-    description: 'Problem: Create an affordable, healthier snack brand with a unique identity.Process: Conducted competitor research and developed brand identity, packaging, and marketing concepts.Solution: Designed a cucumber chips brand with three flavours, distinctive packaging, and an IPR protection strategy.Reflection: Learned brand management and intellectual property basics; would improve the design through customer feedback and testing.',
-    tags: ['User flow', 'Wireframes', 'UI design'], color: 'peach', symbol: 'DM',url:'https://github.com/SoumyaBadoniya/Design_Management_And_IRP'
+    description: 'Problem: Create an affordable, healthier snack brand with a distinctive identity. Process: Researched competitors and developed brand identity, packaging, and marketing concepts. Solution: Designed a cucumber chips brand with three flavours, distinctive packaging, and an intellectual-property strategy. Reflection: Learned brand management basics and identified customer feedback as the next step.',
+    tags: ['Brand identity', 'Packaging', 'IPR'], color: 'peach', icon: Package, url:'https://github.com/SoumyaBadoniya/Design_Management_And_IRP'
   },
   {
     number: '03', type: 'Photoshop Assignment', title: 'Photoshop Assignment',
-    description: '1. Horizon Zero Dawn Poster: Created a cinematic composition poster combining character imagery, dramatic lighting, and landscape elements to create visual depth and atmosphere.2. God of War Poster: Designed a cinematic composition using character placement, snowy landscapes, and contrasting tones to create a dramatic visual impact.',
-    tags: ['Competitive review', 'Visual design', 'Usability'], color: 'mint', symbol: 'PA',url:'https://github.com/SoumyaBadoniya/PhotoshopAssignments'
+    description: 'Horizon Zero Dawn poster: Created a cinematic composition combining character imagery, dramatic lighting, and landscape elements to add depth and atmosphere. God of War poster: Used character placement, snowy landscapes, and contrasting tones to create a dramatic visual impact.',
+    tags: ['Photoshop', 'Poster design', 'Composition'], color: 'mint', icon: ImageIcon, url:'https://github.com/SoumyaBadoniya/PhotoshopAssignments'
   }
 ];
 
@@ -68,7 +68,7 @@ function App() {
             </div>
             <div className="hero-meta"><span>BASED IN BHOPAL</span><span>SCROLL TO EXPLORE ↓</span></div>
           </div>
-          <div className="hero-art" aria-label="Decorative abstract shapes representing creative thinking">
+          <div className="hero-art" role="img" aria-label="Abstract artwork representing creative thinking">
             <div className="art-topline"><span>IDEAS IN PROGRESS</span><Asterisk size={20}/></div>
             <div className="orbit orbit-one"></div><div className="orbit orbit-two"></div>
             <div className="art-sun"></div><div className="art-block"></div>
@@ -104,8 +104,8 @@ function App() {
                 <article className="project-card" key={project.number}>
                   <button className={`project-art ${project.color}`} onClick={() => setActiveProject(project)} aria-label={`View details for ${project.title}`}>
                     <span className="project-number">{project.number} / CASE STUDY</span>
-                    <span className="project-symbol">{project.symbol}</span>
-                    <span className="project-art-caption">A CONCEPT BY Soumya Badoniya <ArrowUpRight size={15}/></span>
+                    <span className="project-icon-wrap"><project.icon size={54} strokeWidth={1.35} aria-hidden="true" /></span>
+                    <span className="project-art-caption">A PROJECT BY SOUMYA BADONIYA <ArrowUpRight size={15}/></span>
                   </button>
                   <div className="project-info">
                     <div className="project-type">{project.type}</div>
